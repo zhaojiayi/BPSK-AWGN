@@ -1,14 +1,2 @@
-﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(356,5): warning MSB8015: Forcing a rebuild of all source files due to the contents of "C:\Users\Administrator\Desktop\大三上\纠错码\课件\课件\纠错编码入门 - 2016 - 2017\纠错码 - Project-1\BPSK+AWGN\BPSK+AWGN\Debug\BPSK+AWGN.tlog\CL.command.1.tlog" being invalid.
-  main.cpp
-  正在生成代码...
-  正在跳过...(未检测到相关更改)
-  print.cpp
-  createRandomCode.cpp
-  channelAWGN.cpp
-  bpskModulation.cpp
-  bpskDemodulation.cpp
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(356,5): warning MSB8015: Forcing a rebuild of all source files due to the contents of "C:\Users\Administrator\Desktop\大三上\纠错码\课件\课件\纠错编码入门 - 2016 - 2017\纠错码 - Project-1\BPSK+AWGN\BPSK+AWGN\Debug\BPSK+AWGN.tlog\CL.command.1.tlog" being invalid.
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(637,5): warning MSB8015: Forcing a rebuild of all source files due to the contents of "C:\Users\Administrator\Desktop\大三上\纠错码\课件\课件\纠错编码入门 - 2016 - 2017\纠错码 - Project-1\BPSK+AWGN\BPSK+AWGN\Debug\BPSK+AWGN.tlog\link.command.1.tlog" being invalid.
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(637,5): warning MSB8015: Forcing a rebuild of all source files due to the contents of "C:\Users\Administrator\Desktop\大三上\纠错码\课件\课件\纠错编码入门 - 2016 - 2017\纠错码 - Project-1\BPSK+AWGN\BPSK+AWGN\Debug\BPSK+AWGN.tlog\link.command.1.tlog" being invalid.
-  BPSK+AWGN.vcxproj -> C:\Users\Administrator\Desktop\大三上\纠错码\课件\课件\纠错编码入门 - 2016 - 2017\纠错码 - Project-1\BPSK+AWGN\Debug\BPSK+AWGN.exe
-  BPSK+AWGN.vcxproj -> C:\Users\Administrator\Desktop\大三上\纠错码\课件\课件\纠错编码入门 - 2016 - 2017\纠错码 - Project-1\BPSK+AWGN\Debug\BPSK+AWGN.pdb (Partial PDB)
+﻿  BPSK+AWGN.vcxproj -> C:\Users\Lenovo\Desktop\Github\BPSK+AWGN\Debug\BPSK+AWGN.exe
+  BPSK+AWGN.vcxproj -> C:\Users\Lenovo\Desktop\Github\BPSK+AWGN\Debug\BPSK+AWGN.pdb (Partial PDB)

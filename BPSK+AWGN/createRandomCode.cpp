@@ -1,7 +1,7 @@
 #include <ctime>
 #include <cstdlib>
 #include "createRandomCode.h"
-//Ê¹ÓÃsrand()²úÉúËæ»úÊı
+//ä½¿ç”¨srand()äº§ç”Ÿéšæœºæ•°
 int GetRandCode() {
 	srand(time(NULL));
 	int randNum = rand() % 2;

@@ -13,25 +13,25 @@
 
 using namespace std;
 
-const int N = 1000000; //±ÈÌØ³¤¶È
-const int Ebn0_Num = 11; //ebn0ÊıÁ¿
+const int N = 1000000; //æ¯”ç‰¹é•¿åº¦
+const int Ebn0_Num = 11; //ebn0æ•°é‡
 int main() {
-	fstream fclear("Result.txt", ios::out); // Ã¿´Î´ò¿ªÏÈÇå¿ÕÎÄ±¾Ô­Êı¾İ
+	fstream fclear("Result.txt", ios::out); // æ¯æ¬¡æ‰“å¼€å…ˆæ¸…ç©ºæ–‡æœ¬åŸæ•°æ®
 	for (int i = 0; i < Ebn0_Num; i++) { 
 		int miss = 0;
 		for (int j = 0; j < N; j++) { 
-			int input = GetRandCode(); ////»ñÈ¡Ëæ»úÊı 
-			int n1 = AfterModulation(input);//Íê³É0µ½-1,1µ½1µÄÓ³Éä
+			int input = GetRandCode(); ////è·å–éšæœºæ•° 
+			int n1 = AfterModulation(input);//å®Œæˆ0åˆ°-1,1åˆ°1çš„æ˜ å°„
 			double uniform = Uniform();
 			double *Gaussian_random = new double;
-			Normal(Gaussian_random, 1); //²úÉú·ş´Ó¾ùÖµÎª0£¬·½²îÎª1µÄÕıÌ¬·Ö²¼µÄËæ»úÊı
-			double n2 = GetAwgnCode(&n1, i, Gaussian_random);// »ñÈ¡ÔÚĞÅµÀÖĞ¼ÓÈë¸ßË¹°×ÔëÉùºóµÄÊı¾İ 
-			int output = AfterDemodulation(&n2);//Íê³É½âµ÷Æ÷¹¦ÄÜ£¬Íê³Éµ½0ºÍ1µÄ»¹Ô­
-			if (output != input) // ÓëÔ­ĞÅºÅ½øĞĞ±È½Ï£¬½øĞĞÎóÂëÍ³¼Æ
+			Normal(Gaussian_random, 1); //äº§ç”Ÿæœä»å‡å€¼ä¸º0ï¼Œæ–¹å·®ä¸º1çš„æ­£æ€åˆ†å¸ƒçš„éšæœºæ•°
+			double n2 = GetAwgnCode(&n1, i, Gaussian_random);// è·å–åœ¨ä¿¡é“ä¸­åŠ å…¥é«˜æ–¯ç™½å™ªå£°åçš„æ•°æ® 
+			int output = AfterDemodulation(&n2);//å®Œæˆè§£è°ƒå™¨åŠŸèƒ½ï¼Œå®Œæˆåˆ°0å’Œ1çš„è¿˜åŸ
+			if (output != input) // ä¸åŸä¿¡å·è¿›è¡Œæ¯”è¾ƒï¼Œè¿›è¡Œè¯¯ç ç»Ÿè®¡
 				miss++;
 		}
-		double ber = miss / (double)N;// ¶ÔÓÚÃ¿Ò»¸öebn0£¬ÇóµÃber
-		print(i, ber); // Êä³ö
+		double ber = miss / (double)N;// å¯¹äºæ¯ä¸€ä¸ªebn0ï¼Œæ±‚å¾—ber
+		print(i, ber); // è¾“å‡º
 	}
 	system("pause");
 	return 0;
